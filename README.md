@@ -1,41 +1,13 @@
-### 1. Getting Started With the Geospatial Environment
-To run the notebooks for this project, you will need some additional python packages. 
-You can install these using conda. 
-We have provided an `environment.yaml` file with the packages to be used for the project.
-This `environment.yaml` file will create a new environment for you called `geospatial`.
+# Short Term Rental Permits in Nashville Council Districts
+This is an exploration of outside investment in Nashville council districts through a geospatial analysis of short term rental permit data.
 
-Open your terminal, and `cd` into this project. 
-From there run: 
-```bash
-conda env create -f environment.yaml
-```
+## Table of Contents
+* General Information
+* Technologies
 
-Once this has been created for you, it is easiest to run from the command line.
-For example, to open a new session with jupyter run: 
-```
-conda activate geospatial
-jupyter notebook
-```
-To close the notebook, type ctrl-c
-To stop using the geospatial environment:
-```
-conda deactivate
-```
+## General Information
+Short term rental permitting has, at times, been controversial in Nashville. It is asserted by critics that these permits, usually indicating an Air BnB location, take away from the neighborhood character and drive up housing costs. I was interested to investigate what this permit data could tell me about the different council districts. Since it is an issue tied to government, I felt that political geographies would be appropriate. I decided to look at investment in districts by "outsiders", or permit holders whose home address is outside of the State, the city of Nashville, or the zip code in which their permitted STR (short term rental) property is located. This map allows the user to compare total STRs across districts, as well as examine where there is a strong concentration of outside investment.
 
-
-### 2. Introduction slide deck and notebooks  
-##### slides 
- - importance of location to some kinds of analysis
- - `geopandas` GeoDataFrames
- - types of geometry
- - intro to coordinate reference systems
- - spatial joins
- - adding context with `folium` maps
-    - constructing maps
-    - markers
-    - marker clusters
-    - popups
-##### notebooks
-- geospatial_intro.ipynb (geopandas and foilum)
-- qualitative_maps.ipynb (geopandas and matplotlib styling elements)
-- choropleth_tutorial.ipynb (geopandas choropleth)
+## Technologies
+* geopandas
+* folium
